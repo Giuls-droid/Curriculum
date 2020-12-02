@@ -1,5 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{altacv}
+\ProvidesClass{altacv}[2017/04/30 AltaCV v1.1.3, yet another alternative class for a résume curriculum vitae.]
+
 %% v1.1: Optionally load academicons
 \newif\if@academicons
 \DeclareOption{academicons}{\@academiconstrue}
@@ -13,16 +14,8 @@
 
 \RequirePackage[margin=2cm]{geometry}
 \RequirePackage{fontawesome5}
+\RequirePackage{academicons}
 
-%% v1.1: Optionally load academicons
-\if@academicons
-  %% Patch to make academicons compilable with XeLaTeX
-  \ExplSyntaxOn
-  \msg_redirect_name:nnn { fontspec } { font-not-found } { none }
-  \ExplSyntaxOff
-  \RequirePackage{academicons}
-  \newfontfamily{\AI}{academicons.ttf}
-\fi
 
 \RequirePackage{xcolor}
 
@@ -61,6 +54,8 @@
 \newcommand{\twittersymbol}{\faTwitter}
 \newcommand{\githubsymbol}{\faGithub}
 \newcommand{\orcidsymbol}{\aiOrcid}
+\newcommand{\ieeesymbol}{\aiIEEE}
+\newcommand{\scholarsymbol}{\aiGoogleScholar}
 \newcommand{\mailsymbol}{\faEnvelope}
 \newcommand{\awardsymbol}{\faAward}
 \newcommand{\printinfo}[2]{\mbox{\textcolor{accent}{#1}\hspace{0.5em}#2\hspace{0.5em}}}
@@ -76,6 +71,8 @@
 \newcommand{\linkedin}[1]{\printinfo{\linkedinsymbol}{#1}}
 \newcommand{\github}[1]{\printinfo{\githubsymbol}{#1}}
 \newcommand{\orcid}[1]{\printinfo{\orcidsymbol}{#1}}
+\newcommand{\ieee}[1]{\printinfo{\ieeesymbol}{#1}}
+\newcommand{\scholar}[1]{\printinfo{\scholarsymbol}{#1}}
 \newcommand{\location}[1]{\printinfo{\locationsymbol}{#1}}
 \newcommand{\award}[1]{\printinfo{\awardsymbol}{#1}}
 \newcommand{\personalinfo}[1]{\def\@personalinfo{#1}}
@@ -84,9 +81,8 @@
   \begingroup
     \ifdef{\@photodiameter}{\begin{minipage}{\dimexpr\linewidth-\@photodiameter-2em}}{}%
     \raggedright\color{emphasis}%
-    {\Huge\bfseries\MakeUppercase{\@name}\par}
-    \medskip
-    {\large\bfseries\color{accent}\@tagline\par}
+    {\Huge\bfseries\MakeUppercase{\@name}}
+    {\LARGE\bfseries\color{accent}\@tagline\par}
     \medskip
     {\footnotesize\bfseries\@personalinfo\par}
     \ifdef{\@photodiameter}{%
