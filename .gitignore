@@ -1,0 +1,7 @@
+#VS Code LaTeX Workshop files
+*.aux
+*.bcf
+*.log
+*.out
+*.run.xml
+*.synctex.gz
