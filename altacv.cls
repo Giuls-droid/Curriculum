@@ -100,7 +100,7 @@
 \renewenvironment{quote}{\color{accent}\itshape\large}{\par}
 
 \newcommand{\cvsection}[2][]{%
-  \bigskip%
+  \medskip%
   \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}}}% 
   {\color{heading}\LARGE\bfseries\MakeUppercase{#2}}\\[-1ex]%
   {\color{heading}\rule{\linewidth}{2pt}\par}\medskip
@@ -118,7 +118,7 @@
   \smallskip
   {\small\makebox[0.5\linewidth][l]{\faCalendar \hspace{0.5em}#3}%
   \ifstrequal{#4}{}{}{\makebox[0.5\linewidth][l]{\faMapMarker\hspace{0.5em}#4}}\par}
-  \medskip
+  \smallskip
 }
 \newcommand{\cvaward}[4]{%
   {\award\large\color{emphasis}#1\par}
