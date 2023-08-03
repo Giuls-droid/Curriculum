@@ -70,11 +70,12 @@
 %Formation 1
 %%%%%%%%%%%%%
 
-\cvevent{Doctor of Philosophy (PhD), Electrical Engineering}{Ecole polytechnique de Bruxelles -- Université Libre de Bruxelles }{Oct 2018 -- 2022(expected)}{Leuven, BE}
+\cvevent{Doctor of Philosophy (PhD), Electrical Engineering}{Ecole polytechnique de Bruxelles -- Université Libre de Bruxelles - IMEC}{Oct 2018 -- June 2022}{Leuven, BE}
 \begin{itemize}
     \setlength{\itemindent}{0.5em}
     \item[--] \small{Thesis:"Design Enablement of integrated circuts using sub-5nm technology process and 3D integration"}
     \item[--] \small{Guest lecturer - ETH Zurich, Politecnico di Bari} 
+%    \item[--] \small{European project technical lead for 2nm technology node research}
 \end{itemize}
 \medskip
 
@@ -82,8 +83,8 @@
 %Formation 21
 %%%%%%%%%%%%%
 
-\cvevent{Exchange Student, Electronic Systems}{Department of Electrical Engineering
- -- Technology University of Eindhoven }{Feb 2017 -- July 2017}{Eindhoven, NL}
+%\cvevent{Exchange Student, Electronic Systems}{Department of Electrical Engineering
+% -- Technology University of Eindhoven }{Feb 2017 -- July 2017}{Eindhoven, NL}
 
 
 \medskip
@@ -92,6 +93,11 @@
 %%%%%%%%%%%%%
 
 \cvevent{MSc, Electrical Engineering, Micro Electronics Systems}{Dipartimento di Ingegneria Elettrica e dell'informazione -- Politecnico di Bari }{Jan 2016 -- Jul 2018}{Bari, IT}
+\begin{itemize}
+    \setlength{\itemindent}{0.5em}
+    \item[--] \small{Feb-July 2017 - Exchange semester at Technology University of Eindhoven (TUe) in the
+    \href{https://research.tue.nl/en/organisations/electronic-systems}{Electronic Systems group (ES)}}
+\end{itemize}
 
 \medskip
 
@@ -99,7 +105,24 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cvsection{Experience}
-\cvevent{Researcher}{IMEC}{Nov 2021 -- Present}{Leuven, BE}
+
+\cvevent{Chiplet Solution Architect}{IMEC}{Sep 2023 -- Present}{Leuven, BE}
+\setlength{\itemindent}{0.5em}
+\begin{itemize}
+    \item[--] \small{Drive system architecture development with 2.5D and 3D technologies}
+    \item[--] \small{Next generation HPC systems for AI}
+\end{itemize}
+
+%%%%%%%%%%%%%
+%Experience 1
+%%%%%%%%%%%%%
+
+\cvevent{Researcher}{IMEC}{Nov 2021 -- August 2023}{Leuven, BE}
+\begin{itemize}
+    \setlength{\itemindent}{0.5em}
+    \item[--] \small{Backside PDN and functional Backside pathfinding}
+    \item[--] \small{HW-SW co-design methodologies for STCO}
+\end{itemize}
 
 %\begin{itemize}
 %    \setlength{\itemindent}{0.5em}
@@ -115,13 +138,12 @@
 %%%%%%%%%%%%%
 
 \cvevent{PhD Candidate}{Cadence Design Systems - IMEC}{Oct 2018 -- 2021}{Leuven, BE}
-
 \begin{itemize}
     \setlength{\itemindent}{0.5em}
-    \item[--] \small{Proposal and implementation of new methods to enable advanced technologies for front-end and back-end digital IC design}
-    \item[--] \small{Advanced CMOS technology nodes (sub-5$nm$ FinFET \textbullet\hspace{0.1em} GAAFET
-    \textbullet\hspace{0.1em} CFET) and 3D-IC}
-    \item[--] \small{Industrial design benchmarking: ARM \textbullet\hspace{0.1em} RISC-V \textbullet\hspace{0.1em} NVDLA}
+    \item[--] \small{Proposal and implementation of new methods to enable DTCO and 3D IC design}
+%    \item[--] \small{Advanced CMOS technology nodes (sub-5$nm$ FinFET \textbullet\hspace{0.1em} GAAFET
+%    \textbullet\hspace{0.1em} CFET) and 3D-IC}
+%   \item[--] \small{Industrial design benchmarking: ARM \textbullet\hspace{0.1em} RISC-V \textbullet\hspace{0.1em} NVDLA}
     \item[--] \small{European project technical lead for 2nm technology node research}
 \end{itemize}
 
@@ -143,11 +165,16 @@
 %%%%%%%%%%%%%
 
 %\cvevent{Event organizing team}{Devlounge}{Sep 2016 -- Nov 2016}{Bari, IT}
-
+\newpage
 \begin{fullwidth}
 \cvsection{List of publications}
 \begin{itemize}
     \setlength{\itemindent}{0.5em}
+    \item[--] \small{\textbf{G.Sisto},  et al., ``Block-level Evaluation and Optimization of Backside PDN for
+    High-Performance Computing at the A14 node'', 2023 IEEE Symposium on VLSI Technology and Circuits, Kyoto, Japan} 
+    \item[--] \small{\textbf{G.Sisto},  et al., ``System-level evaluation of 3D power delivery network at 2nm node", 2023 SPIE Advanced Lithography + Patterning, DTCO and Computational Patterning, San Jose, USA} 
+    \item[--] \small{\textbf{G.Sisto},  et al., ``Physical design level PPA evaluation of buried power rail at 2nm
+    node'', 2023 SPIE Advanced Lithography + Patterning, DTCO and Computational Patterning, San Jose, USA} 
     \item[--] \small{\textbf{G.Sisto},  et al., ``Evaluation of Nanosheet and Forksheet Width Modulation for Digital IC
     Design in the Sub-3nm Era'', IEEE Transactions on Very Large Scale Integration (VLSI) Systems, vol. 30, no. 10, pp.
     1497-1506, Oct. 2022} 
@@ -155,7 +182,8 @@
     Interconnects at 2nm Node'', IEDM 2021, San Francisco, USA (*authors contributed equally to the work)} 
     \item[--] \small{\textbf{G.Sisto}  et al., ``Design And Sign-off Methodologies For
     Wafer-To-Wafer Bonded 3D-ICs At Advanced Nodes (invited)'', SLIP 2021 (co-hosted with ICCAD 2021), Virtual Event}
-    \item[--] \small{\textbf{G.Sisto} et al., ``IR-Drop Analysis of Hybrid Bonded 3D-ICs with Backside Power Delivery and $\mu$- \& $n$- TSVs'', IITC 2021, Kyoto, Japan} 
+    \item[--] \small{\textbf{G.Sisto} et al., ``IR-Drop Analysis of Hybrid Bonded 3D-ICs with Backside Power Delivery
+    and $\mu$- \& $n$- TSVs'', IITC 2021, Virtual Event} 
     \item[--] \small{\textbf{G.Sisto} et al., ``Design enablement of fine pitch face-to-face 3D system integration using die-by-die place \& route'', 3DIC 2019, Sendai, Japan}
 \end{itemize}
 \end{fullwidth}
